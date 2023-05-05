@@ -1,0 +1,318 @@
+/* Reset and base styles  */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%; /* sticky footer */
+}
+
+body {
+	height: 100%; /* sticky footer */
+	display: flex; /* sticky footer */
+	flex-direction: column; /* sticky footer */
+	margin: 0;
+	font-family: 'Barlow', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	color: #050215;
+
+	overflow-x: auto !important;
+}
+
+body > * {
+	flex-shrink: 0; /* sticky footer */
+}
+
+input, textarea, button {
+	font-family: inherit;
+	padding: 0;
+}
+
+label {
+	cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+fieldset {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+legend {
+	display: block;
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+/* Grid styles */
+
+.container {
+	width: 1920px;
+	margin: 0 auto;
+}
+
+
+/* Utility */
+
+.none {
+	display: none !important;
+}
+
+.fp-table {
+	justify-content: unset !important;
+}
+
+.progress {
+	width: 195px !important;
+	border-right: 2px solid #E5E5E5;
+}
+
+.progress-wrapper {
+	padding-bottom: 100px;
+	padding-left: 100px;
+	padding-right: 100px;
+
+	display: flex !important;
+	flex-direction: row !important;
+
+	margin-bottom: 296px;
+}
+
+
+.progress__bar {
+	padding-left: 18px;
+	margin-bottom: 181px;
+}
+
+.progress .logo {
+	padding-top: 57px;
+	margin-bottom: 267px;
+}
+
+.logo__link {
+	font-weight: 500;
+	font-size: 30px;
+	color: #050215 !important;
+}
+
+.progress__fraction {
+	font-weight: 500;
+	font-size: 54px;
+	line-height: 65px;
+	color: #B4977B;
+}
+
+.progress__fraction--mod {
+	color: #E4D6C9;
+}
+
+.progress__list {
+	margin-left: 25px;
+	width: 4px;
+	height: 230px;
+
+	background: #E5E5E5;
+	border-radius: 2px;
+}
+
+.progress__line {
+	width: 4px;
+	height: 38px;
+	border-radius: 2px;
+}
+
+.progress__line.active {
+	background-color: #B4977B;
+}
+
+.progress__mouse {
+	padding-left: 18px;
+}
+
+/* galery  */
+
+.galery {
+	padding-bottom: 100px;
+	padding-left: 164px;
+}
+
+.galery__img {
+	margin-bottom: 161px;
+}
+
+.galery__contacts {
+	display: flex;
+	justify-content: center;
+}
+
+.contacts-list {
+	display: flex;
+	column-gap: 94px;
+}
+
+.contacts-link {
+	font-weight: 500;
+	font-size: 14px;
+	color: #050215 !important;
+}
+
+.content {
+	padding-left: 133px;
+}
+
+/* navigation */
+
+.navigation {
+	margin-bottom: 160px;
+	padding-top: 64px;
+}
+.navigation__list {
+	display: flex;
+	align-items: center;
+}
+
+.navigation__item {
+	margin-right: 58px;
+}
+.navigation__item:nth-child(5) {
+	margin-right: 108px;
+}
+.navigation__item:last-child {
+	margin-right: 0;
+}
+
+.navigation__link {
+	font-size: 18px;
+	line-height: 22px;
+	color: #050215;
+}
+
+.navigation__link.active {
+	color: #B4977B;
+}
+
+.navigation__link-basket {
+	position: relative;
+}
+
+.navigation__circle {
+	position: absolute;
+	top: -5px;
+	left: 12px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	width: 10px;
+	height: 10px;
+	font-size: 6px;
+	line-height: 7px;
+	
+	color: #FFFFFF;
+	background-color: #050215;
+	border-radius: 50%;
+}
+
+/* content-title */
+
+
+.content-title__wrapper {
+	display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    width: 650px;
+}
+
+.title {
+	width: 517px;
+	font-weight: 600;
+	font-size: 64px;
+	line-height: 77px;
+}
+
+.subtitle {
+	font-size: 18px;
+	line-height: 32px;
+	color: rgba(5, 2, 21, 0.75);
+}
+
+.subtitle--mod {
+	overflow-y: scroll;
+	height:290px;
+}
+
+.subtitle--mod::-webkit-scrollbar {
+	width: 4px;
+  }
+
+.subtitle--mod::-webkit-scrollbar-track {
+	background-color: #E5E5E5;        /* цвет дорожки */
+  }
+.subtitle--mod::-webkit-scrollbar-thumb {
+	background-color: blue;    /* цвет плашки */
+	border-radius: 20px;       /* закругления плашки */
+	border: 3px solid #B4977B;  /* padding вокруг плашки */
+  }
+
+.button {
+	width: 178px;
+	height: 60px;
+
+	background: #B4977B;
+	border-radius: 50px;
+
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 179.5%;
+	color: #FFFFFF;
+	padding: 13px 32px;
+}
+
+/* content-number */
+
+.content-number__fraction {
+	display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.content-number__fraction-item {
+	font-weight: 600;
+	font-size: 200px;
+	line-height: 240px;
+	text-shadow: 2px 0 2px #B4977B, 
+				0 2px 2px #B4977B, 
+				-2px 0 2px #B4977B, 
+				0 -2px 2px #B4977B;
+	color: #fff;
+}
+
